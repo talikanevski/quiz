@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/editText"
+                    android:hint="@string/please_enter_your_name"
+                    android:lines="1"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/NameOfTheTest"
+                    style="@style/NameOfTheTest"
+                    android:text="@string/name_of_the_test" />
+
+                <TextView
+                    android:id="@+id/introduction"
+                    style="@style/introduction"
+                    android:text="@string/introduction" />
+
+                <Button
+                    android:id="@+id/letsGo"
+                    style="@style/button"
+                    android:onClick="letsGo"
+                    android:text="@string/let_s_go" />
+
+                <Button
+                    android:id="@+id/start"
+                    style="@style/button"
+                    android:onClick="startTest"
+                    android:text="@string/start_a_test"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/question_1"
+                    style="@style/question"
+                    android:text="@string/question_1"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/mosheKazav"
+                    style="@style/image"
+                    android:src="@drawable/moshe_katsav"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/blot"
+                    style="@style/image"
+                    android:src="@drawable/blot"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/psychologicalPortrait"
+                    style="@style/psychologicalPortrait"
+                    android:text="@string/psychological_portrait"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rd"
+                    style="@style/rd"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/answer1_1"
+                        style="@style/radioButton"
+                        android:onClick="click"
+                        android:text="@string/answer1_1" />
+
+                    <RadioButton
+                        android:id="@+id/answer1_2"
+                        style="@style/radioButton"
+                        android:onClick="click"
+                        android:text="@string/answer1_2" />
+
+                    <RadioButton
+                        android:id="@+id/answer1_3"
+                        style="@style/radioButton"
+                        android:onClick="click"
+                        android:text="@string/answer1_3" />
+
+                    <RadioButton
+                        android:id="@+id/answer1_4"
+                        style="@style/radioButton"
+                        android:onClick="click"
+                        android:text="@string/answer1_4" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/reaction1_1"
+                    style="@style/reaction"
+                    android:text="@string/reaction1_1"
+                    android:visibility="gone" />
+                />
+
+                <TextView
+                    android:id="@+id/reaction1_2"
+                    style="@style/reaction"
+                    android:text="@string/reaction1_2"
+                    android:visibility="gone" />
+                />
+
+                <TextView
+                    android:id="@+id/reaction1_3"
+                    style="@style/reaction"
+                    android:text="@string/reaction1_3"
+                    android:visibility="gone" />
+                />
+
+                <TextView
+                    android:id="@+id/reaction1_4"
+                    style="@style/reaction"
+                    android:text="@string/reaction1_4"
+                    android:visibility="gone" />
+                />
+
+                <CheckBox
+                    android:id="@+id/answer5_1"
+                    style="@style/radioButton"
+                    android:onClick="checkBox"
+                    android:text="@string/answer5_1"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/answer5_2"
+                    style="@style/radioButton"
+                    android:onClick="checkBox"
+                    android:text="@string/answer5_2"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/answer5_3"
+                    style="@style/radioButton"
+                    android:onClick="checkBox"
+                    android:text="@string/answer5_3"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/answer5_4"
+                    style="@style/radioButton"
+                    android:onClick="checkBox"
+                    android:text="@string/answer5_4"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/answer_6"
+                    style="@style/editText"
+                    android:hint="Please enter Yes or No"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/submit"
+                    style="@style/button"
+                    android:onClick="submit"
+                    android:text="@string/submit_my_answer"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/next"
+                    style="@style/button"
+                    android:onClick="updateQuestion"
+                    android:text="@string/next_question"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/solution"
+                    style="@style/button"
+                    android:onClick="solution"
+                    android:text="@string/get_result"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/share"
+                    style="@style/share"
+                    android:onClick="share"
+                    android:text="@string/share_your_result_with_friends"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/reset"
+                    style="@style/reset"
+                    android:onClick="reset"
+                    android:text="@string/try_again"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/innocent_victim"
+                    style="@style/image"
+                    android:src="@drawable/innocent_victim"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/yourResult"
+                    style="@style/result"
+                    android:text="@string/result1"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/flower"
+                    style="@style/flower"
+                    android:src="@drawable/flower"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/tartar"
+                    style="@style/image"
+                    android:src="@drawable/tartar"
+                    android:visibility="gone" />
+                />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
